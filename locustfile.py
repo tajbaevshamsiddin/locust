@@ -12,7 +12,7 @@ class MyUser(HttpUser):
     #     if response.status_code == 201:
     #         print("Post request sent successfully")
     #     else:
-    #         print("Error sending post requests")
+    #         print("Error sending post request")
 
     @task
     def about(self):
