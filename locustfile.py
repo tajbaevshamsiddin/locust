@@ -1,8 +1,9 @@
 from locust import HttpUser, task, between
 
 class MyUser(HttpUser):
-    wait_time = between(1, 5)
-    # headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer '}
+    wait_time = between(3, 10)
+    token = ""
+    # headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer {}'.format(token) }
 
     # @task
     # def post_request(self):
